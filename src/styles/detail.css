@@ -1,0 +1,124 @@
+.restaurant-detail {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.restaurant__title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+.restaurant__top-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    justify-items: start;
+    align-items: start;
+    gap: 20px;
+}
+.restaurant__poster {
+    width: 50%;
+    border-radius: 10px;
+}
+.menus {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.menu ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+.menu ul li {
+    background-color: #f9f9f9;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.menu.item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1;
+}
+.menu h4 {
+    color: #444;
+    margin-bottom: 10px;
+}
+.review {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+}
+.category {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 3px 8px;
+    background-color: #e0f7fa;
+    color: #00796b;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.review-form-container {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#reviewForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#reviewForm input,
+#reviewForm textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#reviewForm button {
+  padding: 10px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#reviewForm button:hover {
+  background-color: #00574b;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .restaurant__top-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .restaurant__poster {
+        width: 100%;
+    }
+    .menus {
+        flex-direction: column;
+    }
+}

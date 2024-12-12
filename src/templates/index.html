@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Restaurant Catalog">
+  <meta name="theme-color" content="#DB0000"/>
+  <title>FoodLover</title>
+  <link rel="icon" type="image/svg+xml" href="./images/logo/item_delicious_adeptus_temptation.webp">
+  <link rel="manifest" href="./app.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <!-- <script src="https://use.fontawesome.com/b070c8f1df.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha384-dyB6qtf1sru+gXEjX2gPAn77ANcfY1PAXeX91DQO4QnC4T5CiwYx0duVzS09EQzp" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Skip to Content -->
+  <a href="#main-content" class="skip-link">Skip to Content</a>
+
+  <!-- App Bar -->
+  <header class="app-bar">
+    <div class="brand">
+      <img src="./images/logo/item_delicious_adeptus_temptation.webp" alt="FoodLover Logo" class="logo">
+      <h1>FoodLover</h1>
+    </div>
+    <button id="hamburger" class="hamburger" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+      ☰
+    </button>
+    <nav id="nav-menu" class="nav-menu">
+      <ul>
+        <li><a href="./" tabindex="0">Home</a></li>
+        <li><a href="#/favorite" tabindex="0">Favorite</a></li>
+        <li><a href="https://www.linkedin.com/in/ibarhuttaqi/" target="_blank" tabindex="0">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Element -->
+  <section class="hero">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./images/heroes/hero-image_2-small.jpg">
+      <img src='./images/heroes/hero-image_2-large.jpg'
+           alt="Delicious Food">
+    </picture>
+    <h2>Your Restaurant Catalog</h2>
+  </section>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section class="restaurant-list">
+      <h2>Explore Restaurants</h2>
+      <div id="restaurants"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Copyright © 2024 - FoodLover</p>
+  </footer>
+
+</body>
+</html>
