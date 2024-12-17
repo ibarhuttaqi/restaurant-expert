@@ -56,7 +56,3 @@ window.addEventListener('load', () => {
   app.renderPage();
   swRegister();
 });
-
-const START = 10;
-const NUMBER_OF_IMAGES = 100;
-
